@@ -5,7 +5,7 @@ body
     margin: 0px;
     padding: 0px;
     background-color:white;
-    color: blue;
+    color: darkblue;
     font-family: Arial, Helvetica, "sans-serif";
     font-size: 18px;
     text-align: center;
@@ -25,7 +25,7 @@ h2
 }
 h3
 {
-    color: blue;
+    color: darkblue;
 }
 #page
 {
@@ -41,7 +41,7 @@ h3
 
 {
     padding: 5px;
-    background-color: blue;
+    background-color: darkblue;
     border: double 10 px red;
     text-align: center;
 }
@@ -49,7 +49,7 @@ h3
 img
 
 {
-    border: double 10px red;
+    border: double 10px darkblue;
 }
 #right-column
 
