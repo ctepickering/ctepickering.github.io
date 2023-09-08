@@ -33,8 +33,9 @@ h3
     height: 570px;
     margin: 20px auto;
     padding: 30px;
+    color: darkblue;
     background-color: white;
-    border : double 10px red
+    border : double 10px darkblue;
 }
 
 #header /* Styles for Heading */
