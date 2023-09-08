@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+body
+{
+    margin: 0px;
+    padding: 0px;
+    background-color:white;
+    font-family: Arial, Helvetica, "sans-serif";
+    font-size: 18px;
+    text-align: center;
+}
+h1
+{
+    margin: 0px;
+    padding: 5px;
+    color:white;
+    font-size: 36px;
+}
+h2 
+{
+    font-size: 30px;
+}
+h3
+{
+    color: white;
+}
+#page
+{
+    max-width:800px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #bfa475;
+}
+
+#header /* Styles for Heading */
+
+{
+    padding: 5px;
+    background-color: #655035;
+    text-align: center;
+}
+
+img
+
+{
+    border: double 10px white;
+}
