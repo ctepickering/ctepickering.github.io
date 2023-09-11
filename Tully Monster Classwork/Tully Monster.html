@@ -30,8 +30,22 @@
 
 <form name="question">
 <p id="box">Question - How long was the Tully Monster?</p> 
-<button type="button" onclick="document.getElementById('box').innerHTML = 'The Tully Monster grew to 35cm long.'">Show answer</button>
+Answer: <input type="text" name="answer">
+<button type="button" onclick="validate()">Show answer</button>
+<p id="box2">Click below to find out where it lived.</p> 
+<button type="button" onclick="document.getElementById('box').innerHTML = 'It lived in the tropical estuaries of Illinois, USA.'">Show habitat</button>
 </form>
 
+<script> 
+function validate() {
+	var x = document.forms["question"]["answer"].value;
+	if (x == "") {
+		document.getElementById("box").style.color="red";
+	}
+	else if (x == "35cm") {
+		alert("Correct!");
+	}
+}
+</script>
 </body>
 </html>
