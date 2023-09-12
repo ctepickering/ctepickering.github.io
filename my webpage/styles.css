@@ -21,7 +21,7 @@ h1
 h2 
 {
     font-size: 30px;
-    color: red;
+    color: darkred;
 }
 h3
 {
@@ -30,7 +30,7 @@ h3
 #page
 {
     max-width: 800px;
-    height: 570px;
+    height: 620px;
     margin: 20px auto;
     padding: 30px;
     color: darkblue;
@@ -42,7 +42,7 @@ h3
 
 {
     padding: 5px;
-    background-color: darkblue;
+    background-color: darkred;
     border: double 10 px red;
     text-align: center;
 }
@@ -63,4 +63,8 @@ img
 #left-column
 {
     float:left; text-align:center; width:400px
+}
+#list2
+{
+    color: darkred;
 }
