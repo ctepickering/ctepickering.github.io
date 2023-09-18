@@ -24,9 +24,13 @@
         Alan Shearer
     </label></p>
     </div>
+    <div type="question">
+        <p id="box"><h3>3.What is the length of a 2003 ford focus in meters (1 d.p.)?</h3></p> 
+        Answer : <input id="answer3" type="text" name="answer3">
+    </div>
 </div>
 <div id = "right-column">
-    <p><h3>3. What correctly displays the phrase 'two zero two four' </h3></p>
+    <p><h3>4. What correctly displays the phrase 'two zero two four' </h3></p>
     <div class="question">
       <select name="question3" required>
           <option value="1">0024</option>
@@ -35,7 +39,7 @@
           <option value="4">2044</option>
       </select>
   </div>
-  <p><h3>4. Did you enjoy the quiz? </h3></p>
+  <p><h3>5. Did you enjoy the quiz? </h3></p>
   <label>
     <input type="radio" name="question4" value="1" required>
     Yes
@@ -68,6 +72,10 @@
 	 if (x == "is this it") {
         count = count +1
 	}
+    var y =  document.forms["question"]["answer3"].value;
+	 if (y == "4.3m") {
+        count = count +1
+	}
     if ("question3" =="2")  {
         count = count +1
 
@@ -79,7 +87,7 @@
     if ("question4"=="5") {
         count = count +1
     }
-alert("You scored " + count + "/4")	
+alert("You scored " + count + "/5")	
 }
 
 </script>
