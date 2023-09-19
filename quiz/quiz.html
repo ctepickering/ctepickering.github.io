@@ -31,7 +31,7 @@
 </div>
 <div id = "right-column">
     <p><h3>4. What correctly displays the phrase 'two zero two four' </h3></p>
-    <div class="question">
+    <div class="question" id = "question3">
       <select name="question3" required>
           <option value="1">0024</option>
           <option value="2">2024</option>
@@ -66,28 +66,24 @@
 </form>
 </body>
 <script>
-    count = 0
+
     function validate() {
-	var x =  document.forms["question"]["answer"].value;
+        count = 0
+	var x =  document.getElementById("answer").value;
 	 if (x == "is this it") {
-        count = count +1
+        count = count +1;
 	}
-    var y =  document.forms["question"]["answer3"].value;
+    var y =  document.getElementById("answer3").value;
 	 if (y == "4.3m") {
-        count = count +1
+        count = count +1;
 	}
-    if ("question3" =="2")  {
-        count = count +1
+    var z = document.getElementById("question3").value;
+    if (z="2024")  {
+        count = count +1;
 
     }
-    if ("question2"=="1") {
-        count = count + 1
 
-    }
-    if ("question4"=="5") {
-        count = count +1
-    }
-alert("You scored " + count + "/5")	
+alert("You scored " + count + "/5")	;
 }
 
 </script>
