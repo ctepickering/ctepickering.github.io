@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 <html>
     <head>
-        
+        <title>Times Table Calculator</title>
     </head>
     <body>
-    <form action="" onsubmit="return timestable()">
+    <form action="" method = "post" onsubmit="return timestable()">
         <h1>Times Tables Calculator</h1>
         <p>Table to create: <input type = "text" id = "num"/></p>
         <p>Rows Required: <input type = "text" id = "num_rows" /></p>
         <button type="submit">Generate</button>
         <button type="reset">Reset</button>
     </form>
+    <div id="output">
+
+    </div>
 <script>
 function timestable(){
-    
+    var table = "";
+    var num = Number(document.getElementById("num").value)
+    for (let i = 1;i<13;i++){
+        table = table + "<p>" + i + " times " + num + " equals " +(num*i)
+    }
+    document.getElementById("output").innerHTML;
+return false;
 }
 </script>
     </body>
