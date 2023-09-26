@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Times Table Calculator</title>
+        <link href="timestable.css" rel="stylesheet" type="text/css">
     </head>
     <body>
     <form action="" method = "post" onsubmit="return timestable()">
@@ -12,16 +13,17 @@
         <button type="reset">Reset</button>
     </form>
     <div id="output">
-
+    <p id=" output"></p>
     </div>
 <script>
 function timestable(){
     var table = "";
-    var num = Number(document.getElementById("num").value)
-    for (let i = 1;i<13;i++){
+    var num = document.getElementById("num").value
+    var limit= document.getElementById("num_rows").value
+    for (let i = 1;i<=limit;i++){
         table = table + "<p>" + i + " times " + num + " equals " +(num*i)
     }
-    document.getElementById("output").innerHTML;
+    document.getElementById("output").innerHTML = table;
 return false;
 }
 </script>
