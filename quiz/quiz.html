@@ -40,26 +40,26 @@
       </select>
   </div>
   <p><h3>5. Did you enjoy the quiz? </h3></p>
-  <label>
-    <input type="radio" name="question4" value="1" required>
+  <div class="question" name="question4">
+    <input type="radio"  value="1" required>
     Yes
-</label>
-<p><label>
-    <input type="radio" name="question4" value="2" required>
+    <p>
+    <input type="radio"  value="2" required>
     No
-</label></p>
-<p><label>
-    <input type="radio" name="question4" value="3" required>
+    </p>
+<p>
+    <input type="radio"  value="3" required>
     Maybe
-</label></p>
-<p><label>
-    <input type="radio" name="question4" value="4" required>
+</p>
+<p>
+    <input type="radio"  value="4" required>
     I don't know
-</label></p>
-<p><label>
-    <input type="radio" name="question4" value="5" required>
-    Can you repeat the question
-</label></p>
+</p>
+<p>
+    <input type="radio"  value="5" required>
+    Can you repeat the question?
+</p>
+</div>
 <p><a href="https://www.youtube.com/watch?v=8x-ujqvOhts">Chorus</a></p>
 <button type="button" onclick="validate()">check answers</button>
 </div>
@@ -78,7 +78,12 @@
         count = count +1;
 	}
     var z = document.getElementById("question3").value;
-    if (z="2024")  {
+    if (z="2")  {
+        count = count +1;
+
+    }
+    var a = document.getElementById("question4").value;
+    if (a="5")  {
         count = count +1;
 
     }
